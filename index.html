@@ -11,32 +11,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ❓  change major sections to <section> tags
-    container divs are in the major tags ❓  -->
-    <header>
-      <nav>
-        <div class="container">
-          <img src="images/logo.png" alt="Three Star Media Logo">
-          <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Team</a></li>
-           <li><a href="#">Contact</a></li>
-         </ul>
-          <form>
-            <input type="search" placeholder="Search" name="search">
-           <button type="submit">&#128269</button>
-          </form>
-        </div> <!--END CONTAINER-->
-      </nav>
-      <div class="header-welcome">
-        <div class="container">
-          <h1>Welcome to Three Star Media</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto velit architecto possimus dolores autem voluptatum earum, facere ad eligendi! Sit exercitationem nulla, error aliquam deleniti cupiditate laboriosam earum consequuntur ducimus.</p>
-          <button>Connect with us ▶</button>
-        </div> <!--END container-->
-      </div> <!--END header-welcome-->
+  <!-- ❓  fix css tags ❓  -->
+  <header>
+    <nav>
+      <div class="container">
+        <img src="images/logo.png" alt="Three Star Media Logo">
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <form>
+          <input type="search" placeholder="Search" name="search">
+          <button type="submit">&#128269</button>
+        </form>
+      </div> <!--END CONTAINER-->
+    </nav>
+    <div class="header-welcome">
+      <div class="container">
+        <h1>Welcome to Three Star Media</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto velit architecto possimus dolores autem voluptatum earum, facere ad eligendi! Sit exercitationem nulla, error aliquam deleniti cupiditate laboriosam earum consequuntur ducimus.</p>
+        <button>Connect with us ▶</button>
+      </div> <!--END container-->
+    </div> <!--END header-welcome-->
   </header>
   <main>
     <section class="section-about"> 
@@ -80,7 +79,8 @@
           <h3>Print</h3>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, repellendus! Illo at ut cupiditate dignissimos hic, eum accusamus odit, beatae repellat labore unde debitis vero corporis atque culpa magni maxime?</p>
           <button>Print Plans ▶</button>
-        </div> <!--END container-->
+        </div> 
+      </div><!--END container-->  
     </section> <!--END section-services-->
     <section class="section-vision">
       <div class="container">
@@ -89,7 +89,7 @@
         <button class="section-vision">Learn More ▶</button>
       </div> <!--END container-->  
     </section> <!-- END section-vision-->
-    <section class="team">
+    <section class="section-team">
       <div class="container">
         <h2>Our Team</h2>
         <img class="profile image" src="images/john.jpg" alt="John Doe">
@@ -147,11 +147,11 @@
       </div> <!--END container-->
     </section> <!--END section-contact-->
   </main>
-  <div class="container">
-    <footer>
+  <footer>
+    <div class="cotnainer">
       <p>Copyright Three Star Meida, 2020</p>
       <p>All image are taken from <a href="http://www.unsplash.com" target="blank">Unsplash</a></p>
-    </footer>
-  </div>
+    </div>
+  </footer> 
 </body>
 </html>
