@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Three Star Media</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -23,14 +23,15 @@
           <li><a href="#">Team</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <form>
+        <form> <!-- ❗   replace with awesome font later  ❗-->
           <input type="search" placeholder="Search" name="search">
-          <button type="submit">&#128269</button>
+          <button type="submit"> &#128269; </button>
         </form>
       </div> <!--END CONTAINER-->
     </nav>
-    <div class="header-welcome">
+    <div class="header-welcome"> <!-- ❗ flex box z index ❗-->
       <div class="container">
+        <!--Image in the background in CSS-->
         <div class="header-welcome-overlay"></div>
         <h1>Welcome to Three Star Media</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto velit architecto possimus dolores autem voluptatum earum, facere ad eligendi! Sit exercitationem nulla, error aliquam deleniti cupiditate laboriosam earum consequuntur ducimus.</p>
@@ -39,16 +40,19 @@
     </div> <!--END header-welcome-->
   </header>
   <main>
-    <section class="section-about"> 
+    <section class="section-about"> <!-- ❗ flexbox img on left  h2 2xP on right need a couple of divs❗-->
       <div class="container">
-        <!--❓flexbox img on left  h2 2xP on right need a couple of divs❓-->
-        <img src="images/about-us.jpg" alt="Three Star Media Break Room">
-        <h2>About Us</h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus dignissimos quis, voluptatem totam perferendis ipsam voluptates laborum. Harum, sint beatae ipsum asperiores suscipit quasi provident voluptatibus mollitia nobis dolore?</p>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, odio voluptatem sunt minima quis necessitatibus facere nisi iure aliquam animi exercitationem eligendi repellat quaerat blanditiis placeat! Soluta doloremque expedita facere.</p>
+        <div class="section-about-image">
+          <img src="images/about-us.jpg" alt="Three Star Media Break Room">
+        </div> <!--END section-about-image-->
+        <div class="section-about-text">
+          <h2>About Us</h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus dignissimos quis, voluptatem totam perferendis ipsam voluptates laborum. Harum, sint beatae ipsum asperiores suscipit quasi provident voluptatibus mollitia nobis dolore?</p>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, odio voluptatem sunt minima quis necessitatibus facere nisi iure aliquam animi exercitationem eligendi repellat quaerat blanditiis placeat! Soluta doloremque expedita facere.</p>
+          </div> <!--END section-about-text-->
       </div> <!--END Container-->
     </section> <!-- END section-about-->
-    <section class="section-severice">
+    <section class="section-services"> <!-- ❗   grid  ❗-->
       <div class="container">
         <h2>Our Services</h2>
         <div class="services digital">
@@ -83,15 +87,15 @@
         </div> <!-- END services web-->
       </div><!--END container-->  
     </section> <!--END section-services-->
-    <section class="section-vision">
+    <section class="section-vision">  <!-- ❗   flexbox - one asxis ❗-->
       <div class="container">
         <h3>Our Vision</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima magnam voluptatem quos exercitationem, reiciendis, ea sapiente in, doloremque sed laboriosam molestiae officiis aperiam porro ducimus dolorum dicta autem. Nobis, explicabo!</p>
         <button class="vision-btn">Learn More ▶</button>
       </div> <!--END container-->  
     </section> <!-- END section-vision-->
-    <section class="section-team">
-      <div class="container">
+    <section class="section-team"> <!-- ❗   grid and order CSS ❗-->
+      <div class="container"> 
         <h2>Our Team</h2>
         <img class="profile image" src="images/john.jpg" alt="John Doe">
         <div class="profile text">
@@ -104,7 +108,7 @@
         <div class="profile text">
         <h3>Bob Rite</h3>
         <h4>CFO and Co-owner</h4>
-        <hr>
+        <!-- ❗   use border bottom ❗-->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis hic unde, ratione deleniti ipsum tenetur! Itaque officiis ratione unde corrupti consequatur totam dicta sapiente, corporis, fuga sint velit adipisci enim.</p>
         </div>
       </div><!--END container-->
