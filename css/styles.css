@@ -50,42 +50,325 @@ table {
 /*** black #222222  dark Yellow #c78b07 yellow #ffe6ac ***/
 /* 🧐  General Formatting 🧐  */
 body{
-
+	font-family: 'Lato', sans-serif;
 }
 h1{
-
+font-size: 3.5rem;
+font-weight: bold;
+line-height: 150%;
 }
 h2{
-
+font-size: 3rem;
+font-weight: bold;
 }
 h3{
-
+font-size: 2rem;
+font-weight: bold;
 }
 h4{
-
+font-size: 1.2rem;
 }
 h5{
-
+font-size: 1.5rem;
 }
 p{
-
+padding:0.5rem;
 }
 a{
-
-}
-ul{
-
-}
-hr{
-
+	text-decoration: none;
+  color: white;
 }
 header{
-  
+  background-color:#c78b07;
 }
-/* 😱  Class formatting  😱 */
+nav{
+	background-color: #222;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width:100%;
+}
+nav ul li{
+  padding: 1rem;
+ width: 100%;
+ text-align: center;
+}
+nav ul li a{
+	color:#c78b07;
+}
+button{
+	padding: 1rem;
+	margin: 0.5rem;
+}
+/* ❗ if input class, icon moves
+      if nav form doesn't stretch ❗ */
+nav form{
+	width:100%;
+}
 
+table{
+	width:100%;
+
+}
+table, th, td {
+  border:1px solid black;
+	padding:1rem;
+	
+}
+tr:nth-child(1) {
+	background-color: #ffe6ac;
+}
+footer{
+	background-color: #222;
+	color: #c78b07;
+	padding: 1rem;
+}
+footer a{
+	color: #c78b07;
+	text-decoration: underline; 
+}
+
+/* 😱  Class formatting  😱 */
+.container{
+	width: 100%;
+  margin: 0 auto;
+}
+/* ❗ Font not changing color ❗ */
+.active{
+	background-color: #c78b07;
+	color: #222;
+}
+
+/* ❗ container height ❗ */
+.header-welcome{
+  background-image: url("../images/main-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.header-welcome-overlay{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 90%;
+	height:90%;
+	text-align:left; 
+	vertical-align: middle; 
+	padding: 0 20px 5px 47px;
+	margin: 3rem 0px;
+}
+/* ❗ Bevel??? ❗*/
+.welcome-btn{
+  background-color: #c78b07;
+	border-color: #c78b07;
+	padding:1.5rem;
+}
+.section-about{
+	background-color: #ffe6ac;
+	padding: 1rem;
+}
+/* ❗ acting weird ❗ */
+.section-about img{
+	max-width:100%;
+}
+.services{
+  background-color: #ffe6ac;
+	margin: 10px;
+}
+.services img{
+  width: 100%;
+}
+.services h3,.services p{
+	padding:0.5rem;
+}
+.services button{
+	background-color: #222;
+	color: white;
+	}
+.section-vision{
+	background-image: url(../images/vision.jpg);
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* ❗ fix postion/size ❗ */
+	width: 100%;
+	color:white;
+	padding: 0.5rem;
+}
+/* ❗ weird void between img and text box ❗ */
+.section-team{
+margin: 10px;
+}
+
+.profile{
+  background-color: #ffe6ac;
+  width: 100%;
+  height: auto;
+}
+
+.section-team h3{
+	padding: 0.3rem;
+}
+.section-team h4{
+	border-bottom: 1px;
+	border-color: #c78b07;
+	border-style: solid;
+	padding: 0.3rem;
+}
+.section-contact{
+	margin: 1rem;
+}
+.section-contact h3{
+	padding:1rem 0;
+} 
+.message input{
+  width: 100%;
+  margin: 8px 0 16px 0;
+}
+.message button{
+	background-color: #222;
+	color: #c78b07;
+}
+.message textarea {
+  width: 100%;
+  height: 100px;
+  margin: 8px 0;
+  background-color: #f8f8f8;
+  resize: none;
+}
+.message div form p{
+  font-size: 24px;
+}
+.message form{
+  padding: 30px 10px 15px 10px;
+  font-size: 18px;
+}
+.message form p{
+  margin: 1em 0 1em 0 ;
+}
+.contact-iframe{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 100%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	}
+	
+	.location iframe{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+	}
+	/* ❗ iframe height  responsive iframe
+	https://www.w3schools.com/howto/howto_css_responsive_iframes.asp ❗*/
 
 /* 😓  Desktop CSS       😓 */
 @media screen and (min-width: 681px){
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+
+.section-about .container{
+display: flex;
+flex-direction: row;
+}
+
+.section-about-text{
+	padding: 1rem;
+}
+/* ❗ acting weird ❗ */
+/*.section-about img{
+	400px;
+}
+.section-about-image{
+	width: 5000px;
+}*/
+
+/* ❗ Margins ❗ */
+.section-services .container{
+	display: grid;
+	margin: 0.5rem auto;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 3em 1fr 1fr;
+	grid-column-gap: 3px;
+	grid-row-gap: 3px;
+}
+.section-services h2{
+grid-column: 1 / span 6;
+grid-row: 1;
+}
+.section-services p{
+	padding: 1rem;
+}
+.digital{
+	grid-column: 1 / span 3;
+	grid-row: 2;
+}
+.marketing{
+	grid-column: 4 / span 3;
+	grid-row: 2;
+}
+.video{
+	grid-column: 1 / span 2;
+	grid-row: 3;
+}
+.web{
+	grid-column: 3 / span 2;
+	grid-row: 3;
+}
+.print{
+	grid-column: 5 / span 2;
+	grid-row: 3;
+}
+/* ❗ Margins ❗ */
+.section-team .container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 3em 1fr 1fr;
+}
+.section-team h2{
+grid-column: 1 / span 2;
+grid-row: 1;
+}
+.profile:nth-child(4){
+grid-column: 2;
+grid-row: 3;
+}
+.profile:nth-child(5){
+grid-column: 1;
+grid-row: 3;
+}
+.section-contact .container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: repeat(4 1fr);
+}
+.section-contact h2{
+grid-column: 1 / span 2;
+grid-row:1 ;
+}
+.message{
+grid-column: 1;
+grid-row: 2 ;
+}
+
+.location {
+grid-column: 2;
+grid-row: 2;
+}
+
+.hours {
+grid-column: 1 / span 2;
+grid-row: 4 ;
+}
+
 
 }

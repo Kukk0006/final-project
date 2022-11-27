@@ -5,13 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Three Star Media</title>
-  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <!--<link rel="stylesheet" href="css/styles.css"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- ❓  fix css tags ❓  -->
   <header>
     <nav>
       <div class="container">
@@ -29,20 +28,21 @@
         </form>
       </div> <!--END CONTAINER-->
     </nav>
-    <div class="header-welcome"> <!-- ❗ flex box z index ❗-->
+    <div class="header-welcome"> <!-- ❗ flex box  ❗-->
       <div class="container">
         <!--Image in the background in CSS-->
-        <div class="header-welcome-overlay"></div>
+        <div class="header-welcome-overlay">
         <h1>Welcome to Three Star Media</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto velit architecto possimus dolores autem voluptatum earum, facere ad eligendi! Sit exercitationem nulla, error aliquam deleniti cupiditate laboriosam earum consequuntur ducimus.</p>
         <button class="welcome-btn">Connect with us ▶</button>
-      </div> <!--END container-->
+        </div><!--END header-welcome-overlay -->
+      </div> <!-- END container-->
     </div> <!--END header-welcome-->
   </header>
   <main>
     <section class="section-about"> <!-- ❗ flexbox img on left  h2 2xP on right need a couple of divs❗-->
       <div class="container">
-        <div class="section-about-image">
+        <div class="section-about-image"><!-- ❗ didn't react to css like expected❗-->
           <img src="images/about-us.jpg" alt="Three Star Media Break Room">
         </div> <!--END section-about-image-->
         <div class="section-about-text">
@@ -52,7 +52,7 @@
           </div> <!--END section-about-text-->
       </div> <!--END Container-->
     </section> <!-- END section-about-->
-    <section class="section-services"> <!-- ❗   grid  ❗-->
+    <section class="section-services"> <!-- ✔    grid  ✔ -->
       <div class="container">
         <h2>Our Services</h2>
         <div class="services digital">
@@ -94,8 +94,8 @@
         <button class="vision-btn">Learn More ▶</button>
       </div> <!--END container-->  
     </section> <!-- END section-vision-->
-    <section class="section-team"> <!-- ❗   grid and order CSS ❗-->
-      <div class="container"> 
+    <section class="section-team"> <!-- ✔    grid and order CSS ✔ -->
+      <div class="container">
         <h2>Our Team</h2>
         <img class="profile image" src="images/john.jpg" alt="John Doe">
         <div class="profile text">
@@ -125,11 +125,12 @@
           <input type="text" id="email" name="email">
           <label for="message"> Your Message</label>
           <textarea id="message"></textarea>
-          <input type="submit" value="Send">
+          <!-- ❗  <input type="submit" value="Send"> temp change to button ❗-->
+          <button> Send </button>
         </form>
       </div>
       <div class="contact hours">
-        <h3>Hours of opperation</h3>
+        <h3>Hours of Operation</h3>
         <table>
           <tr>
             <th>Days</th>
@@ -147,13 +148,15 @@
       </div>
       <div class="contact location">
         <h3>Location</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.94455180453!2d-75.75712548424978!3d45.34993154908148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669209618623!5m2!1sen!2sca" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+        <div class="contact-iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2803.9447276243163!2d-75.754937!3d45.349928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669507582278!5m2!1sen!2sca" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!--END contact iframe-->
+      </div><!--END contact loaction-->
       </div> <!--END container-->
     </section> <!--END section-contact-->
   </main>
   <footer>
-    <div class="cotnainer">
+    <div class="container">
       <p>Copyright Three Star Meida, 2020</p>
       <p>All image are taken from <a href="http://www.unsplash.com" target="blank">Unsplash</a></p>
     </div>
