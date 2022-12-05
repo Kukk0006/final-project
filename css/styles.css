@@ -50,98 +50,86 @@ table {
 /*** black #222222  dark Yellow #c78b07 yellow #ffe6ac ***/
 /* 🧐  General Formatting 🧐  */
 body{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px; /*  1em = 14px = 1rem*/
+	line-height: 1.5;
+	color: #222;
+}
+.container{
+ padding: 1em;
 }
 h1{
-font-size: 3.5rem;
+font-size: 71px;
 font-weight: bold;
-line-height: 150%;
+line-height: 106px;
+margin-bottom: 17px;
 }
 h2{
-font-size: 3rem;
+font-size: 48px;
 font-weight: bold;
+margin-bottom: 12px;
 }
 h3{
-font-size: 2rem;
+font-size: 32px;
 font-weight: bold;
 }
+
 h4{
-font-size: 1.2rem;
-}
-h5{
-font-size: 1.5rem;
+font-size: 16px;
 }
 p{
-padding:0.5rem;
+	margin-bottom: 1em;
 }
-a{
-	text-decoration: none;
-  color: white;
+img{
+	max-width: 100%;
+	height: auto;
 }
-header{
+.logo{
   background-color:#c78b07;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
+
 nav{
 	background-color: #222;
 }
-nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  width:100%;
-}
-nav ul li{
-  padding: 1rem;
- width: 100%;
- text-align: center;
-}
-nav ul li a{
+
+nav a:link,
+nav a:visited{
+	display: block;
 	color:#c78b07;
-}
-button{
-	padding: 1rem;
-	margin: 0.5rem;
-}
-/* ❗ if input class, icon moves
-      if nav form doesn't stretch ❗ */
-nav form{
-	width:100%;
+	font-size: 18px;
+	padding-top: 17px;
+	padding-bottom:17px;;
+	text-align: center;
+	text-decoration: none;
 }
 
-table{
-	width:100%;
-
-}
-table, th, td {
-  border:1px solid black;
-	padding:1rem;
-	
-}
-tr:nth-child(1) {
-	background-color: #ffe6ac;
-}
-footer{
-	background-color: #222;
-	color: #c78b07;
-	padding: 1rem;
-}
-footer a{
-	color: #c78b07;
-	text-decoration: underline; 
-}
-
-/* 😱  Class formatting  😱 */
-.container{
-	width: 100%;
-  margin: 0 auto;
-}
-/* ❗ Font not changing color ❗ */
-.active{
+nav li.active a:link,
+nav li.active a:visited  {
 	background-color: #c78b07;
 	color: #222;
 }
+/* ❗ if input class, icon moves
+if nav form doesn't stretch flex-box grow 1❗ */
+nav form{
+display: flex;
+align-items: stretch;
 
-/* ❗ container height ❗ */
+}
+nav input{
+	flex-grow: 1;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+nav button{
+	background-color: #222;
+	border-color: #c78b07;
+	padding:10px;
+}
+
+/* 🙀   WECLOME  🙀  */
 .header-welcome{
   background-image: url("../images/main-banner.jpg");
   background-repeat: no-repeat;
@@ -149,67 +137,70 @@ footer a{
   display: flex;
   flex-direction: column;
   color: white;
+	padding-top: 68px;
+	padding-bottom: 68px;
 }
 
-.header-welcome-overlay{
+.header-welcome .container{
 	background-color: rgba(0, 0, 0, 0.5);
-	width: 90%;
-	height:90%;
+	width: auto;
 	text-align:left; 
-	vertical-align: middle; 
-	padding: 0 20px 5px 47px;
-	margin: 3rem 0px;
+	vertical-align: middle;
+	padding-top: 50px; 
 }
-/* ❗ Bevel??? ❗*/
-.welcome-btn{
-  background-color: #c78b07;
-	border-color: #c78b07;
-	padding:1.5rem;
+/*  🌵 more space between arrow and text 🌵 */
+.header-welcome button{
+	font-size: 20px;
+	padding: 34px;
+	background-color: #c78b07;
+	border: none;
 }
+/*---------About--------*/
 .section-about{
 	background-color: #ffe6ac;
-	padding: 1rem;
 }
-/* ❗ acting weird ❗ */
-.section-about img{
-	max-width:100%;
-}
+/*----------Our Services--------*/
 .services{
   background-color: #ffe6ac;
-	margin: 10px;
+	margin-bottom: 1em;
 }
 .services img{
   width: 100%;
 }
-.services h3,.services p{
-	padding:0.5rem;
+.services p,
+.services h3 {
+
 }
 .services button{
 	background-color: #222;
 	color: white;
+	padding: 40px 32px 36px 34px;
+	font-size: 21px ;
+	margin: 14px;
+	border: none;
 	}
+
+/*-------Vision----------*/
 .section-vision{
 	background-image: url(../images/vision.jpg);
 	background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; /* ❗ fix postion/size ❗ */
+  background-size: cover; /* ❗ fix postion/size? ❗ */
 	width: 100%;
 	color:white;
-	padding: 0.5rem;
+
 }
-/* ❗ weird void between img and text box ❗ */
+
+/*--------Team-----------*/
 .section-team{
-margin: 10px;
+	margin: 10px;
 }
 
-.profile{
+.profile-grid{
   background-color: #ffe6ac;
-  width: 100%;
-  height: auto;
 }
-
-.section-team h3{
-	padding: 0.3rem;
+.section-team img{
+	width: 100%;
 }
 .section-team h4{
 	border-bottom: 1px;
@@ -217,12 +208,21 @@ margin: 10px;
 	border-style: solid;
 	padding: 0.3rem;
 }
+.text{
+	padding: 14px;
+
+}
+
+
+/*----------Contact-------*/
+
 .section-contact{
 	margin: 1rem;
 }
 .section-contact h3{
 	padding:1rem 0;
 } 
+
 .message input{
   width: 100%;
   margin: 8px 0 16px 0;
@@ -255,22 +255,55 @@ margin: 10px;
 	padding-top: 100%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 	}
 	
-	.location iframe{
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		width: 100%;
-		height: 100%;
+.location iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
 	}
 	/* ❗ iframe height  responsive iframe
 	https://www.w3schools.com/howto/howto_css_responsive_iframes.asp ❗*/
 
-/* 😓  Desktop CSS       😓 */
-@media screen and (min-width: 681px){
+table{
+	width:100%;
 
-nav ul{
+}
+table, th, td {
+  border:1px solid black;
+	padding:1rem;
+	
+}
+tr:nth-child(1) {
+	background-color: #ffe6ac;
+}
+/*----------Footer-------*/
+footer{
+	background-color: #222;
+	color: #c78b07;
+	padding: 1rem;
+}
+footer a{
+	color: #c78b07;
+	text-decoration: underline; 
+}
+
+
+
+
+
+
+/* 😓                   Desktop CSS                        😓 */
+@media screen and (min-width: 760px){
+.container{
+max-width: 1200px;
+margin: 0 auto;
+}
+
+nav ul, 
+nav form{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -292,19 +325,19 @@ flex-direction: row;
 	width: 5000px;
 }*/
 
-/* ❗ Margins ❗ */
 .section-services .container{
 	display: grid;
 	margin: 0.5rem auto;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: 3em 1fr 1fr;
-	grid-column-gap: 3px;
-	grid-row-gap: 3px;
+	grid-template-rows: 70px 1fr 1fr;
+	grid-column-gap: 14px;
+	grid-row-gap: 11px;
 }
 .section-services h2{
-grid-column: 1 / span 6;
-grid-row: 1;
+	grid-column: 1 / span 6;
+	grid-row: 1;
 }
+
 .section-services p{
 	padding: 1rem;
 }
@@ -328,29 +361,20 @@ grid-row: 1;
 	grid-column: 5 / span 2;
 	grid-row: 3;
 }
-/* ❗ Margins ❗ */
-.section-team .container{
-display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 3em 1fr 1fr;
+
+/* ------------- Team --------*/
+.profile-grid{
+	display: grid;
+	grid-column: 1fr 1fr;
+	grid-row: 1fr;
 }
-.section-team h2{
-grid-column: 1 / span 2;
-grid-row: 1;
-}
-.profile:nth-child(4){
-grid-column: 2;
-grid-row: 3;
-}
-.profile:nth-child(5){
-grid-column: 1;
-grid-row: 3;
-}
+/* ----------------- Desktop Contact -------*/
 .section-contact .container{
 display: grid;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: repeat(4 1fr);
-}
+grid-template-rows: 3em 2fr 1fr;;
+} 
+
 .section-contact h2{
 grid-column: 1 / span 2;
 grid-row:1 ;
@@ -367,7 +391,7 @@ grid-row: 2;
 
 .hours {
 grid-column: 1 / span 2;
-grid-row: 4 ;
+grid-row: 3 ;
 }
 
 
