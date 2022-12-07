@@ -228,6 +228,9 @@ padding:14px 0px;;
 .section-team img{
 	width: 100%;
 }
+.section-team h2{
+	padding-top: 18px;
+}
 .section-team h3{
 	padding-top: 7px;
 }
@@ -242,8 +245,7 @@ padding:14px 0px;;
 	padding-top: 14px;
 }
 .profile-text{
-	padding-left: 14px;
-padding-bottom:14px;
+	padding: 14px;
 }
 .section-team{
 	padding-bottom:18px;
@@ -359,8 +361,9 @@ h2{
 h3{
 font-size: 36px;
 }
-h4{
-
+.fa-play{
+	padding-left: 18px;
+	font-size: 24px;
 }
 p{
 	font-size: 16px;
@@ -406,6 +409,7 @@ nav a:visited{
 
 }
 .header-welcome button{
+	margin: 16px 0px;
 	font-size:24px;
 }
 
@@ -427,14 +431,7 @@ padding-top: 18px;
 	width: 100%;
 	grid-column: 1;
 }
-.header-welcome button,
-.section-vision button{
-	margin: 16px 0px;
-}
-.section-vision{
-	margin-top:18px;
-}
-
+/*---------Services-----------*/
 .services-grid{
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -444,6 +441,7 @@ padding-top: 18px;
 }
 .section-services{
 	padding-top:18px;
+	padding-bottom: 18px;
 }
 .services{
 	padding:0px;
@@ -478,9 +476,24 @@ padding-top: 18px;
 	grid-column: 5 / span 2;
 	grid-row: 2;
 }
+/* ----------------- vision---------*/
+.section-vision button{
+	margin: 16px 0px;
+	font-size: 24px;
+	font-weight: 400;
+}
+.section-vision h3{
+	padding-top: 36px;
+}
+.section-vision{
+	margin-top:18px;
+	margin-bottom: 18px;
+}
 
 /* ------------- Team --------*/
-
+.section-team h2{
+	padding-top:24px;
+}
 .profile-grid{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
