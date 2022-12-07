@@ -84,8 +84,16 @@ img{
 	max-width: 100%;
 	height: auto;
 }
-
-/*--------- ✅ ----------*/
+button{
+	font-family: 'Open Sans', sans-serif;
+}
+.fa-play{
+	padding-left: 10px;
+}
+.fa-magnifying-glass{
+	color: #c78b07;
+	font-size: 20px;
+}
 .logo{
   background-color:#c78b07;
 	padding-top: 17px;
@@ -127,15 +135,15 @@ nav input{
 nav button{
 	background-color: #222;
 	border-color: #c78b07;
-	padding:10px;
+	padding:6px 8px;
 }
 
-/* 🙀   WECLOME  🙀  */
-/*--------- ✅ ----------*/
+/* 🙀   WELCOME  🙀  */
 .header-welcome{
   background-image: url("../images/main-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+	background-position: center center;
   display: flex;
   flex-direction: column;
   color: white;
@@ -145,11 +153,11 @@ nav button{
 
 .header-welcome .container{
 	background-color: rgba(0, 0, 0, 0.5);
-	width: auto;
 	text-align:left; 
 	vertical-align: middle;
 	padding-top: 50px; 
 }
+
 /*  🌵 more space between arrow and text 🌵 */
 .header-welcome button{
 	font-size: 20px;
@@ -157,6 +165,7 @@ nav button{
 	background-color: #c78b07;
 	border: none;
 }
+
 /*---------About--------*/
 .section-about{
 	background-color: #ffe6ac;
@@ -210,7 +219,6 @@ padding:14px 0px;;
 	border-color: #c78b07;
 }
 
-
 /*--------Team-----------*/
 
 .profile-grid{
@@ -237,26 +245,26 @@ padding:14px 0px;;
 	padding-left: 14px;
 padding-bottom:14px;
 }
-
+.section-team{
+	padding-bottom:18px;
+}
 
 /*----------Contact-------*/
-
-
 .section-contact h2{
-	padding-top: 24px;
-	padding-bottom: 4px;
+	padding-top: 36px;
+	padding-bottom: 36px;
 } 
 .section-contact h3{
 	padding-bottom:4px;
 }
-
 .section-contact label{
 	font-size:14px ;
 }
 .message input{
   width: 100%;
-	font-size: 20px;
+	font-size: 14px;
 	margin:7px 0;
+	padding: 3px;
 }
 .message button{
 	background-color: #222;
@@ -267,20 +275,20 @@ padding-bottom:14px;
   height: 150px;
   background-color: white;
   resize: none;
-	font-size: 20px;
+	font-size: 14px;
+	margin: 7px 0;
+	padding:3px;
 }
 .section-contact button{
 	margin:18px 0;
 	font-size:21px ;
 }
-
 .contact-iframe{
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 	padding-top: 66%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 	}
-	
 .location iframe{
 	position: absolute;
 	top: 0;
@@ -292,7 +300,6 @@ padding-bottom:14px;
 	}
 	/* ❗ iframe height  responsive iframe
 	https://www.w3schools.com/howto/howto_css_responsive_iframes.asp ❗*/
-
 table{
 	width:100%;
 	margin-bottom: 14px;
@@ -311,118 +318,174 @@ footer p{
 footer{
 	background-color: #222;
 	color: #c78b07;
+	padding: 16px;
 }
 footer a{
 	color: #c78b07;
 	text-decoration: underline; 
 }
+/*footer nth child margin bottom */
+/* END OF YOUR MOBILE-FIRST CSS. 
+NO MEDIA QUERIES ABOVE THIS LINE */
 
+/* TABLET STYLES: 760px to 1199px */
+@media screen and (min-width: 760px) {
 
-
-
-
-
-/* 😓                   Desktop CSS                        😓 */
-@media screen and (min-width: 760px){
-.container{
-max-width: 1200px;
-margin: 0 auto;
-padding-left: 120px ;
-padding-right: 120px;
+	.container {
+			width: 706px;
+			margin: 0 auto;
+	}
+	/* NOTHING ELSE! */ 
 }
+/* 😓                   Desktop CSS                        😓 */
+/* DESKTOP STYLES: ABOVE 1200px */
+@media screen and (min-width: 1200px) {
+
+	.container {
+			width: 1168px;
+			padding: 0 16px;
+			margin: 0 auto;
+	}
+
 h1{ 
 	font-size: 81px;
+	line-height: 121px;
+	/*line height*/
+}
+
+h2{
+	font-size: 55px;
+}
+h3{
+font-size: 36px;
+}
+h4{
+
+}
+p{
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0px;
 }
 .logo{
 	background-color: #222222;
 }
+
+/*padding, or some other issue*/
 nav .container {
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 0px;
 }
 nav ul {
 display: flex;
-}
-.logo{
-  background-color:#222222;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-right:70px;
+justify-content: space-around;
 }
 
+.logo{
+  background-color:#222222;
+	padding-top: 39px;
+	padding-bottom: 30px;
+	padding-right:61px;
+	padding-left:0px;
+}
 
 nav a:link,
 nav a:visited{
 	font-size: 20px;
-	padding-left:45px;
-	padding-right: 45px;
-	padding-top:25px;
-	padding-bottom: 25px;
+	padding: 20px 40px 18px ;
 }
 
-
-
-
-
 /*header padding for overlay*/
-/*heading font change*/
+.header-welcome{
+	padding:50px 0px;
+}
+.header-welcome .container{
+	padding-top: 55px;
 
-.section-about{
-display: flex;
-flex-direction: row;
+}
+.header-welcome button{
+	font-size:24px;
+}
+
+.section-about .container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr;
+gap: 18px;
+padding-top: 18px;
+}
+.section-about p{
+	padding-bottom: 18px;
 }
 
 .section-about .text{
-	padding: 1rem;
+	grid-column: 2;
 }
 .section-about img{
 	width: 100%;
+	grid-column: 1;
+}
+.header-welcome button,
+.section-vision button{
+	margin: 16px 0px;
+}
+.section-vision{
+	margin-top:18px;
 }
 
-.section-services .container{
+.services-grid{
 	display: grid;
-	margin: 0.5rem auto;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: 70px 714px 630px;
+	grid-template-rows: 715px 625px;
 	grid-column-gap: 14px;
-	grid-row-gap: 5px;
+	grid-row-gap: 14px;
 }
-.section-services h2{
-	font-size: 36px;
-	grid-column: 1 / span 6;
-	grid-row: 1;
+.section-services{
+	padding-top:18px;
 }
+.services{
+	padding:0px;
+	margin: 0px;
+	display: grid;
+}
+.services button{
+	margin:18px;
+	font-size: 24px;
 
-.section-services p{
-	padding: 1rem;
+}
+.section-services h3{
+	padding-top:30px;
 }
 .digital{
 	grid-column: 1 / span 3;
-	grid-row: 2;
+	grid-row: 1;
 }
 .marketing{
 	grid-column: 4 / span 3;
-	grid-row: 2;
+	grid-row: 1;
 }
 .video{
 	grid-column: 1 / span 2;
-	grid-row: 3;
+	grid-row: 2;
 }
 .web{
 	grid-column: 3 / span 2;
-	grid-row: 3;
+	grid-row: 2;
 }
 .print{
 	grid-column: 5 / span 2;
-	grid-row: 3;
+	grid-row: 2;
 }
 
 /* ------------- Team --------*/
+
 .profile-grid{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
+	margin: 0;
 }
 .profile-image.bob{
 grid-column: 2;
@@ -433,29 +496,42 @@ grid-row: 1;
 	grid-row:1;
 }
 /* ----------------- Desktop Contact -------*/
-.section-contact .container{
+.section-contact h3{
+	padding-bottom:3px;
+}
+.section-contact label{
+	font-size:16px ;
+}
+.message input{
+	font-size: 16px;
+}
+.message textarea{
+	font-size: 16px;
+}
+
+.section-contact .grid-container{
 display: grid;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: 3em 2fr 1fr;;
+grid-template-rows: 553px 223px;
+gap:16px;
 } 
 
-.section-contact h2{
-grid-column: 1 / span 2;
-grid-row:1 ;
-}
 .message{
 grid-column: 1;
-grid-row: 2 ;
+grid-row: 1 ;
 }
 
 .location {
 grid-column: 2;
-grid-row: 2;
+grid-row: 1;
 }
+.contact-iframe{
 
+	padding-top: 80%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	}
 .hours {
 grid-column: 1 / span 2;
-grid-row: 3 ;
+grid-row: 2 ;
 }
 
 

@@ -11,11 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/3f4e8881ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <nav>
-      <div class="container">
+      <div class="container grid-container">
         <div class="logo">
         <img src="images/logo.png" alt="Three Star Media Logo">
       </div> <!-- END logo-->
@@ -28,23 +29,23 @@
         </ul>
         <form> <!-- ❗   replace with awesome font later  ❗-->
           <input type="search" placeholder="Search" name="search">
-          <button type="submit"> &#128269; </button>
+          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
       </div> <!--END CONTAINER-->
     </nav>
-    <div class="header-welcome"> <!-- ❗ flex box  ❗-->
+    <div class="header-welcome"> 
       <div class="container">
         <!--Image in the background in CSS-->
         <h1>Welcome to Three Star Media</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!</p>
-        <button class="welcome-btn">Connect with us ▶</button>
+        <button class="welcome-btn">Connect with us <i class="fa-sharp fa-solid fa-play"></i></button>
       </div> <!-- END container-->
     </div> <!--END header-welcome-->
   </header>
   <main>
-    <section class="section-about"> <!-- ❗ flexbox img on left  h2 2xP on right need a couple of divs❗-->
+    <section class="section-about"> 
       <div class="container">
-        <div class="section-about image"><!-- ❗ didn't react to css like expected❗-->
+        <div class="section-about image">
           <img src="images/about-us.jpg" alt="Three Star Media Break Room">
         </div> <!--END section-about-image-->
         <div class="section-about text">
@@ -57,43 +58,45 @@
     <section class="section-services"> <!-- ✔    grid  ✔ -->
       <div class="container">
         <h2>Our Services</h2>
+        <div class="services-grid">
         <div class="services digital">
           <img src="images/digital.jpg" alt="Digital Tech">
           <h3>Digital Transformation</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-          <button>Digital Plans ▶</button>
+          <button>Digital Plans <i class="fa-sharp fa-solid fa-play"></i></button>
         </div><!-- END services digital-->
         <div class="services marketing">
           <img src="images/marketing.jpg" alt="Laptop">
           <h3>Marketing</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-          <button>Marketing Plans ▶</button>
+          <button>Marketing Plans <i class="fa-sharp fa-solid fa-play"></i></button>
         </div><!-- END services marketing-->
         <div class="services video">
           <img src="images/video.jpg" alt="Handheld phone with YouTube Icon">
           <h3>Video Production</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-          <button>Video Plans ▶</button>
+          <button>Video Plans <i class="fa-sharp fa-solid fa-play"></i></button>
         </div><!-- END services video-->
         <div class="services web">
           <img src="images/web.jpg" alt="Phone and note book">
           <h3> Web Development</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-          <button>Web Plans ▶</button>
+          <button>Web Plans <i class="fa-sharp fa-solid fa-play"></i></button>
         </div><!-- END services web-->
         <div class="services print">
           <img src="images/print.jpg" alt="Newpaper boxes on the Street">
           <h3>Print</h3>
          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-          <button>Print Plans ▶</button>
+          <button>Print Plans <i class="fa-sharp fa-solid fa-play"></i></button>
         </div> <!-- END services web-->
+        </div> <!--END services-grid-->
       </div><!--END container-->  
     </section> <!--END section-services-->
     <section class="section-vision">  <!-- ❗   flexbox - one asxis ❗-->
       <div class="container">
         <h3>Our Vision</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex voluptatem deleniti lure, sit, accusantium rerum est commodi veniam tempora perspiciatis nobis officiis fagiat eaque. Veritatis exercitationem delectus ex ab laudantium.</p>
-        <button class="vision-btn">Learn More ▶</button>
+        <button class="vision-btn">Learn More <i class="fa-sharp fa-solid fa-play"></i></button>
       </div> <!--END container-->  
     </section> <!-- END section-vision-->
     <section class="section-team"> <!-- ✔    grid and order CSS ✔ -->
@@ -122,6 +125,7 @@
     <section class="section-contact">
       <div class="container">
       <h2>Contact Us</h2>
+    <div class="grid-container">
     <div class="contact message">
           <h3>Send us a message</h3>
         <form action="/action_page.php" id="form1">
@@ -158,8 +162,9 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2803.9447276243163!2d-75.754937!3d45.349928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669507582278!5m2!1sen!2sca" width="685" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div><!--END contact iframe-->
       </div><!--END contact loaction-->
+    </div> <!---END grid-contianer-->
       </div> <!--END container-->
-    </section> <!--END section-contact-->
+    </section> <!--END section-contact-->D
   </main>
   <footer>
     <div class="container">
